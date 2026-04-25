@@ -1,11 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+<html>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>home page</title>
+
+    <style>
+     .pageOne {
+        
+     } 
+
+     h1 {
+        position: absolute;
+        top: 15%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-size: 80px;
+        z-index: 10;
+     }
+
+     .hero {
+        position: relative;
+     }
+
+     .subheading {
+        position: absolute;
+        z-index: 10;
+        top: 25%;
+        left: 42%;
+     }
+
+     .productlist {
+        transition:0.3s;
+        position: absolute;
+        z-index: 10;
+        top: 80%;
+        left:45%;
+     }
+     
+     a:link , a:visited {
+        background-color: bisque;
+        color: black;
+        padding: 14px, 25px;
+        border-radius:8px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+     }
+
+     a:hover, a:active {
+        background-color: rgb(211, 188, 161);
+     }
+
+    </style>
+
 </head>
 <body>
-    <p> hello</p>
+    <div class="pageOne"> 
+     <h1>Smithburg</h1>
+     <div class="subheading">
+     <h2>Market Fresh Burgers</h2>
+     </div>
+
+      <div class="hero">
+        <img src="images/homescreen.jpeg" alt="burger" style="width:100%">
+     </div>
+    </div>
+
+    <div class="productlist">
+        <a href="html/productlist.html">CLICK TO ORDER</a>
+    </div>
+
 </body>
 </html>
