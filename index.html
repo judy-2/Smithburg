@@ -7,15 +7,15 @@
 
     <style>
      .pageOne {
-        
+        background-color:#FFDB70;
      } 
 
-     h1 {
+     .title {
         position: absolute;
-        top: 15%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%,-50%);
-        font-size: 80px;
+        font-size: 35px;
         z-index: 10;
      }
 
@@ -26,50 +26,111 @@
      .subheading {
         position: absolute;
         z-index: 10;
-        top: 25%;
+        top: 22%;
         left: 42%;
      }
 
      .productlist {
         transition:0.3s;
         position: absolute;
+        font-size: large;
         z-index: 10;
-        top: 80%;
-        left:45%;
+        top: 82%;
+        left:44%;
      }
      
      a:link , a:visited {
-        background-color: bisque;
+        background-color: #ffffff;
         color: black;
-        padding: 14px, 25px;
-        border-radius:8px;
+        padding: 18px;
+        border-radius:16px;
+        border-color:rgb(211, 188, 161) ;
         text-align: center;
         text-decoration: none;
         display: inline-block;
+        max-width: 245px;
+        margin: auto;
      }
 
      a:hover, a:active {
-        background-color: rgb(211, 188, 161);
+        background-color:#c5c5c5 ;
      }
+
+    .about {
+        float:right;
+        width: 40%;
+        margin:50px;
+        margin-top: 50px;
+        font-size: medium;
+    }
+
+    .aboutus {
+        margin-top: 80px;
+        text-align: center;
+        font-size: large;
+    }
 
     </style>
 
 </head>
 <body>
     <div class="pageOne"> 
-     <h1>Smithburg</h1>
+     <div class="title">
+         <h1>Smithburg</h1>
+     </div>
      <div class="subheading">
-     <h2>Market Fresh Burgers</h2>
+         <h2>Market Fresh Burgers</h2>
      </div>
 
       <div class="hero">
-        <img src="images/homescreen.jpeg" alt="burger" style="width:100%">
+         <img src="images/homescreen.jpeg" alt="burger" style="width:100%">
+     </div>
+
+     <div class="productlist">
+         <a href="html/productlist.html">CLICK TO ORDER</a>
      </div>
     </div>
 
-    <div class="productlist">
-        <a href="html/productlist.html">CLICK TO ORDER</a>
+    <div class="aboutus">
+        <h1>About Us</h1>
     </div>
 
-</body>
+    <div class="about">
+        <h2>Smithburg is an American-style burger joint located in the heart of South Melbourne. They offer house favourites like cheeseburgers alongside local South Melbourne specials like lobster rolls.</h2>
+    </div>
+
+    <div class="hours">
+        <table>
+            <tr>
+              <td> Monday</td>
+              <td> ClOSED</td> 
+            </tr>
+            <tr>
+              <td>Tuesday</td>
+              <td>11:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Wednesday</td>
+              <td>10:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Thursday</td>
+              <td>11:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Friday</td>
+              <td>10:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Saturday</td>
+              <td>09:00 - 21:00</td>
+            </tr>
+            <tr>
+              <td>Sunday</td>
+              <td>09:00 - 21:00</td>
+            </tr>
+        </table>
+    </div
+
+ </body>
 </html>
