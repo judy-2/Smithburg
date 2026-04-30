@@ -1,0 +1,50 @@
+header {
+    position:fixed;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+}
+
+.back {
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   z-index: 1000;
+   
+}
+
+button {
+    border-radius: 50%;
+    border:none;
+    background-color: #FFDB70;
+    color:#FFDB70;
+    padding: 3px 7px;
+}
+
+h1 {
+  padding-top: 7px;
+  text-align: center;
+}
+
+body {
+    margin-top: 9%;
+    left: 5%;
+}
+
+a:link , a:visited {
+    background-color: #ffffff;
+    color: black;
+    padding: 18px;
+    border-radius:16px;
+    border-color:rgb(211, 188, 161) ;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    max-width: 245px;
+    margin: auto;
+ }
+
+ a:hover, a:active {
+    background-color:#c5c5c5 ;
+ }

@@ -5,57 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product list page</title>
 
-    <script src="productlist.html"></script>
-    <style>
-        .topnav {
-            margin: 0;
-            padding:0;
-            overflow: hidden;
-            background-color: #ffffff;
-        }
+    
 
-       ul li {
-           float: left;
-           list-style-type: none;
-        }
+    <link rel="stylesheet" href="/css/colors.css">
+    <link rel="stylesheet" href="/css/productlist.css">
 
-       ul li a {
-        display: block;
-        color: rgb(0, 0, 0);
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        list-style-type: none;
-        }
-
-       ul li a:hover {
-        background-color: #e5e5e5;
-        }
-        
-        
-    </style>
 </head>
 <body style="background-color: #FFDB70;">
     <header style="background-color: #FFFF;">
-        <div class="topnav">
-         <ul>
-             <li><a href=#Specials>Specials</a> </li>
-             <li><a href=#Burgers>Burgers</a> </li>
-             <li> <a href=#Drinks>Drinks</a> </li>
-         </ul>
-        </div>
+        <h1>Smithburg</h1>
+            <div class="topnav">
+                <ul>
+                    <li><a href=#Specials>Specials</a> </li>
+                     <li><a href=#Burgers>Burgers</a> </li>
+                     <li> <a href=#Drinks>Drinks</a> </li>
+                </ul>
+             </div>
+             
+            <article class="back">
+                <a href="/index.html"><button>o</button></a>
+            </article>
     </header>
 
+    <div class="content">
     <div id="Specials">
         <h1>Specials</h1>
-    </div>
-
-    <div id="Burgers">
-        <h1>Burgers</h1>
-    </div>
-
-    <div id="Drinks">
-        <h1>Drinks</h1>
     </div>
 
     <article class="title">
@@ -174,6 +148,10 @@
      </article>
     </article>
 
+    <div id="Burgers">
+        <h1>Burgers</h1>
+    </div>
+
     <article class="title">
      <h2>Beef Burgers</h2>
     </article>
@@ -218,39 +196,39 @@
      <h2>Chicken Burgers</h2>
     </article>
 
-    <article class="">
+    <article class="fchicken">
      <article class="name">
-         <h5></h5> 
+         <h5>Fried Chicken</h5> 
      </article>
      <article class="description">
-        <p></p>
+        <p>Southern fried chicken, American cheese, iceberg, pickles, onions,  special sauce</p>
      </article>
      <article class="price">
-         <h5>$.00</h5>
+         <h5>$17.00</h5>
      </article>
     </article>
 
-    <article class="">
+    <article class="nashville">
      <article class="name">
-         <h5></h5> 
+         <h5>Nashville Hot</h5> 
      </article>
      <article class="description">
-        <p></p>
+        <p>Nashville spiced fried chicken, American cheese, iceberg, pickles, onions, special sauce</p>
      </article>
      <article class="price">
-         <h5>$.00</h5>
+         <h5>$17.00</h5>
      </article>
     </article>
 
-    <article class="">
+    <article class="grilled">
      <article class="name">
-         <h5></h5> 
+         <h5>Grilled Chicken</h5> 
      </article>
      <article class="description">
-        <p></p>
+        <p>Grilled chicken breast, iceberg, tomato, pickled onion, special sauce</p>
      </article>
      <article class="price">
-         <h5>$.00</h5>
+         <h5>$15.00</h5>
      </article>
     </article>
 
@@ -281,6 +259,10 @@
          <h5>$16.00</h5>
      </article>
     </article>
+
+    <div id="Drinks">
+        <h1>Drinks</h1>
+    </div>
 
     <article class="title">
      <h2>Drinks</h2>
@@ -321,6 +303,8 @@
          <h5>$6.00</h5>
      </article>
     </article>
+
+</div>
 
     
 </body>
