@@ -55,6 +55,8 @@
     font-size: medium;
     font-weight: lighter;
     text-align: center;
+    padding-bottom: 80px;
+    background-color: white;
 }
 
 .aboutus {
@@ -67,7 +69,7 @@
 .open {
     text-align: center;
     margin-top: 150px;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .hours {
@@ -79,12 +81,16 @@
     margin-top: 45px;
    
     justify-content: center;
-    font-size: 25px;
-    
+    font-size: 25px; 
   }
 
 table {
     border-spacing: 35px;
+}
+
+.trading {
+   background-color: #FFDB70;
+   padding-top: 0.5em;
 }
 
 footer {
@@ -93,5 +99,6 @@ footer {
     font-size: 20px;
     background-color: black;
     color: #ffffff;
-    padding: 15px;
+    padding: 35px;
+    max-width: 100%;
 }

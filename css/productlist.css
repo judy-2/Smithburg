@@ -5,7 +5,19 @@ header {
     left: 0%;
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(red, green, blue, alpha);
+    background-color: #FFFF;
 }
+
+.line {
+    position:fixed;
+    width: 100%;
+    max-height: 5px;
+    top: 133px;
+    left: 0%;
+    z-index: 1000;
+    background-color: #FFCB2D;
+    color:#FFCB2D;
+ }
 
 .topnav {
     margin: 0;
@@ -31,6 +43,11 @@ button {
     color:#FFDB70;
     padding: 3px 7px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+  }
 
 h1 {
   padding-top: 7px;
@@ -73,10 +90,7 @@ background-color: #e5e5e5;
 body {
     margin-top: 11%;
     text-align: center;
-}
-
-h5 {
-    font-size: large;
+    background-color: #FFDB70;
 }
 
 .content {
@@ -101,6 +115,10 @@ h5 {
     box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
 }
 
+h5 {
+    font-size: 23px;
+}
+
 .price {
     font-weight: bold;
     font-size: 16px;
@@ -110,3 +128,8 @@ h5 {
     font-size: 14px;
     opacity: 0.8;
 }
+
+p {
+    font-size: 18px;
+}
+

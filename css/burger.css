@@ -1,4 +1,41 @@
-a:link , a:visited {
+header {
+   position:fixed;
+   width: 100%;
+   top: 0%;
+   left: 0%;
+   z-index: 1000;
+   background-color: #FFFF;
+   margin: 0;
+}
+
+.line {
+   position:fixed;
+   width: 100%;
+   max-height: 5px;
+   top: 80px;
+   left: 0%;
+   z-index: 1000;
+   background-color: #FFCB2D;
+   color:#FFCB2D;
+}
+
+.back {
+   position: fixed;
+   top: 20px;
+   left: 20px;
+   z-index: 1000;
+   
+}
+
+button {
+    border-radius: 50%;
+    border:none;
+    background-color: #FFDB70;
+    color:#FFDB70;
+    padding: 3px 7px;
+}
+
+.addtocart {
     background-color: #ffffff;
     color: black;
     padding: 18px;
@@ -9,12 +46,44 @@ a:link , a:visited {
     display: inline-block;
     max-width: 245px;
     margin: auto;
+    text-decoration: none;
  }
 
- a:hover, a:active {
+ .addtocart:hover, .addtocart:active {
     background-color:#c5c5c5 ;
  }
 
  body {
     text-align: center;
+    background-color: #FFDB70;
  }
+
+ .desc {
+   padding-top: 150px;
+   width: 35%;
+   margin-left: 55%;
+   text-align: left; 
+ }
+
+ .addtocart {
+   text-align: left; 
+   right: 0;
+   margin-top: 20%;
+   margin-left: 30%;
+ }
+
+ a {
+   text-decoration: none;
+   color: black;
+ }
+
+ p {
+   font-size: larger;
+   margin-top: 30px;
+ }
+
+ .price {
+   font-size: smaller;
+ }
+
+ 
