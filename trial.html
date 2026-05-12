@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .selection-btn{
+   padding: 12px 25px;
+   margin: 10px;
+   border: none;
+   border-radius: 10px;
+   background-color: #c5c5c5;
+   cursor: pointer;
+   font-size: 18px;
+   transition: 0.3s;
+ }
+
+ .active {
+   background-color: #FFCB2D;
+   color: #c5c5c5;
+ }
+    </style>
+</head>
+<body>
+    <button class="selection-btn" onclick="toggleButton(this)">
+        <p>In-store pick up</p>
+        </button>
+    
+        <button class="selection-btn" onclick="toggleButton(this)">
+        <p>Delivery</p>
+        </button>
+
+        <script>
+            function toggleButton(button) {
+    button.classList.toggle("active")
+}
+        </script>
+</body>
+</html>

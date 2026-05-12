@@ -22,21 +22,82 @@
         </article>
     </header>
 
+    <div class="shape">
     <h2>1. Delivery Method</h2>
 
-    <a class="store">
+    <button class="selection-btn" onclick="toggleButton(this)">
     <p>In-store pick up</p>
-    </a>
+    </button>
 
-    <a class="delivery">
+    <button class="selection-btn" onclick="toggleButton(this)">
     <p>Delivery</p>
-    </a>
+    </button>
 
     <h2>2. Payment Method</h2>
 
+    <form>
+
+      <div class="row">
+          <div>
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname"> <br> <br>
+          </div>
+
+          <div>
+                <label for="lname">Last Name:</label> <br>
+               <input type="lname" id="lanme"> <br> <br>
+          </div>
+     </div>
+
+     <div class="row">
+        <div>
+             <label for="number">Phone Number:</label> <br>
+             <input type="number" id="number"> <br> <br>
+        </div>
+
+        <div>
+            <label for="email">Email:</label> <br>
+            <input type="email" id="email"> <br> <br>
+       </div>
+     </div>
+
+     <div class="row">
+        <div>
+             <label for="cardh">Card Holder:</label> <br>
+             <input type="cardh" id="cardh"> <br> <br>
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <label for="cnumber">Card Number:</label> <br>
+            <input type="cnumber" id="cnumber"> <br> <br>
+       </div>
+       
+       <div>
+            <label for="vuntil">Valid Until:</label> <br>
+            <input type="vuntil" id="vunitl"> <br> <br>
+        </div>
+
+        <div>
+            <label for="vcc">VCC:</label> <br>
+            <input type="vcc" id="vcc"> <br> <br>
+       </div>
+    </div>
+
+    </form>
+
     <article class="proceed">
-        <a href="/html/success.html">Confirm Payment</a>
+        <a href="/html/success.html">Confirm Purchase</a>
     </article>
+
+    </div>
+
+    <script>
+        function toggleButton(button) {
+         button.classList.toggle("active")
+     }
+     </script>
 
 </body>
 </html>
