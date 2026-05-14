@@ -7,6 +7,9 @@
 
     <link rel="stylesheet" href="/css/colors.css">
     <link rel="stylesheet" href="/css/checkout.css">
+    <link rel="stylesheet" href="/css/typography.css">
+
+    <script src="/js/checkout.js" defer></script>
     
 </head>
 <body>
@@ -35,53 +38,68 @@
 
     <h2>2. Payment Method</h2>
 
-    <form>
+    <button class="selection-btn" onclick="toggleButton(this)">
+        <p>mastercard</p>
+    </button>
+    
+    <button class="selection-btn" onclick="toggleButton(this)">
+        <p>visa</p>
+    </button>
 
+    <button class="selection-btn" onclick="toggleButton(this)">
+        <p>apple pay</p>
+    </button>
+
+    <button class="selection-btn" onclick="toggleButton(this)">
+        <p>other</p>
+    </button>
+
+    <form >
       <div class="row">
-          <div>
-                <label for="fname">First Name:</label><br>
-                <input type="text" id="fname" name="fname"> <br> <br>
+          <div class="enter">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
           </div>
 
-          <div>
-                <label for="lname">Last Name:</label> <br>
-               <input type="lname" id="lanme"> <br> <br>
+          <div class="enter">
+                <label for="lname">Last Name:</label> 
+               <input type="lname" id="lname"> 
           </div>
      </div>
 
      <div class="row">
-        <div>
-             <label for="number">Phone Number:</label> <br>
-             <input type="number" id="number"> <br> <br>
+        <div class="enter">
+             <label for="number">Phone Number:</label> 
+             <input type="number" id="number"> 
         </div>
 
-        <div>
-            <label for="email">Email:</label> <br>
-            <input type="email" id="email"> <br> <br>
+        <div class="enter">
+            <label for="email">Email:</label> 
+            <input type="email" id="email"> 
        </div>
      </div>
 
      <div class="row">
-        <div>
+        <div class="enter">
              <label for="cardh">Card Holder:</label> <br>
-             <input type="cardh" id="cardh"> <br> <br>
+             <input type="cardh" id="cardh"> 
         </div>
     </div>
 
     <div class="row">
-        <div>
-            <label for="cnumber">Card Number:</label> <br>
-            <input type="cnumber" id="cnumber"> <br> <br>
+        <div class="enter">
+            <label for="cnumber">Card Number:</label> 
+            <input type="cnumber" id="cnumber"> 
        </div>
        
-       <div>
-            <label for="vuntil">Valid Until:</label> <br>
-            <input type="vuntil" id="vunitl"> <br> <br>
+       <div class="enter">
+            <label for="vuntil">Valid Until:</label> 
+            <input type="vuntil" id="vunitl"> 
         </div>
 
-        <div>
-            <label for="vcc">VCC:</label> <br>
-            <input type="vcc" id="vcc"> <br> <br>
+        <div class="enter">
+            <label for="vcc">VCC:</label> 
+            <input type="vcc" id="vcc"> 
        </div>
     </div>
 
@@ -91,13 +109,11 @@
         <a href="/html/success.html">Confirm Purchase</a>
     </article>
 
+    <button type="submit">Submit</button>
+
     </div>
 
-    <script>
-        function toggleButton(button) {
-         button.classList.toggle("active")
-     }
-     </script>
+    
 
 </body>
 </html>

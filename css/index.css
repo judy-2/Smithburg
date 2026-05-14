@@ -4,7 +4,7 @@
 
  .title {
     position: absolute;
-    top: 20%;
+    top: 150px;
     left: 50%;
     transform: translate(-50%,-50%);
     font-size: 35px;
@@ -18,8 +18,9 @@
  .subheading {
     position: absolute;
     z-index: 10;
-    top: 22%;
-    left: 42%;
+    top: 180px;
+    left: 41%;
+    font-size: 15px;
  }
 
  .productlist {
@@ -42,6 +43,7 @@
     display: inline-block;
     max-width: 245px;
     margin: auto;
+    font-weight: bold;
  }
 
  a:hover, a:active {
