@@ -10,15 +10,19 @@
     <link rel="stylesheet" href="/css/productlist.css">
     <link rel="stylesheet" href="/css/typography.css">
 
+    <script src="/js/shopping_cart.js" defer></script>
+
 </head>
 <body>
     <header>
-        <h1>Smithburg</h1>
+        <a href="/index.html">
+            <h1>Smithburg</h1>
+         </a>
             <div class="topnav">
                 <ul>
                     <li><a href=#top>Specials</a> </li>
                      <li><a href=#pineapple>Burgers</a> </li>
-                     <li> <a href=#Drinks>Drinks</a> </li>
+                     <li> <a href=#drinks>Drinks</a> </li>
                 </ul>
              </div>
              
@@ -29,9 +33,13 @@
             <article class="line">
                 <p>.</p>
             </article>
+
+            <a href="/html/cart.html" class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+               </a>
     </header>
 
-    
+    <main>
     <div class="Specials">
         <h1>Specials</h1>
     </div>
@@ -176,10 +184,10 @@
          <h5>Pineapple</h5> 
      </article>
      <img src="/assets/pineapple.png" alt="Image of the Pineapple Margarita"> 
-     <article class="description">
+     <article id="pineapple">
+     </article><article class="description">
         <p>Anejo tequila, triple sec, lime, pineapple syrup, jalapeno</p>
      </article>
-     <article id="pineapple">
      <article class="price">
          <h5>$21.00</h5>
      </article>
@@ -323,9 +331,11 @@
      <article class="description">
         <p>Crispy cauliflower, iceberg, pickles, onions, house-made special sauce</p>
      </article>
+     <article id="drinks">
      <article class="price">
          <h5>$16.00</h5>
      </article>
+    </article>
     </article>
     </article>
     </div>
@@ -384,5 +394,6 @@
     </article>
     </div>
 
+    </main>
 </body>
 </html>

@@ -1,13 +1,25 @@
-.pageOne {
+@import url('https://fonts.googleapis.com/css2?family=Mansalva&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+h1 {
+    font-family: "Mansalva", sans-serif;
+    font-size: 75px;
+  }
+  
+  .pageOne {
     background-color:#FFDB70;
  } 
 
  .title {
     position: absolute;
-    top: 150px;
+    top: 145px;
     left: 50%;
     transform: translate(-50%,-50%);
-    font-size: 35px;
     z-index: 10;
  }
 
@@ -29,7 +41,7 @@
     font-size: large;
     z-index: 10;
     top: 82%;
-    left:44%;
+    left:43%;
  }
  
  a:link , a:visited {
@@ -37,13 +49,14 @@
     color: black;
     padding: 18px;
     border-radius:16px;
-    border-color:rgb(211, 188, 161) ;
+    border: 4.5px solid #FFCB2D;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     max-width: 245px;
     margin: auto;
     font-weight: bold;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
  }
 
  a:hover, a:active {

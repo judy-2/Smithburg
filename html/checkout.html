@@ -14,18 +14,18 @@
 </head>
 <body>
     <header style="background-color: #FFFF;">
-        <h1>Smithburg</h1>
-             
-        <article class="back">
-             <a href="/index.html"><button>o</button></a>
-         </article>
+        <a href="/index.html">
+            <h1>Smithburg</h1>
+         </a>  
+         
+         <a><button class="back" onclick="history.back()">o</button></a>
 
          <article class="line">
             <p>.</p>
         </article>
     </header>
 
-    <div class="shape">
+    <main>
     <h2>1. Delivery Method</h2>
 
     <button class="selection-btn" onclick="toggleButton(this)">
@@ -102,18 +102,12 @@
             <input type="vcc" id="vcc"> 
        </div>
     </div>
-
     </form>
 
     <article class="proceed">
         <a href="/html/success.html">Confirm Purchase</a>
     </article>
 
-    <button type="submit">Submit</button>
-
-    </div>
-
-    
-
+    </main>
 </body>
 </html>

@@ -8,46 +8,80 @@
     <link rel="stylesheet" href="/css/colors.css">
     <link rel="stylesheet" href="/css/cart.css">
     <link rel="stylesheet" href="/css/typography.css">
+
+    <script src="/js/shopping_cart.js" defer></script>
     
 </head>
 <body>
     <header>
-        <h1>Smithburg</h1>
-            <article class="back">
-                <a href="/index.html"><button>o</button></a>
-            </article>
+       <a href="/index.html">
+         <h1>Smithburg</h1>
+      </a>
+
+      <a><button class="back" onclick="history.back()">o</button></a>
+
             <article class="line">
                 <p>.</p>
             </article>
+
+            <a href="/html/cart.html" class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+               </a>
     </header>
 
     <main>
+    <article class="container">
     <article class="items">
-     <h2> Items Selected </h2>
-     <p>Cheeseburger</p>
-     <p>Beef patty, Cheese, lettuce, tomato, onion, pickles, ketchup, mustard, special sauce</p>
+        <article class="title">
+          <h2> Items Selected </h2>
+        </article>
 
-     <p>Vanilla Shake</p>
-     <p>Blended to order with vanilla soft serve</p>
-    </article> 
+        <article class="product">
+            <p>Cheeseburger</p>
+            <p>Beef patty, Cheese, lettuce, tomato, onion, pickles, ketchup, mustard, special sauce</p>
+         </article>
+
+        <article class="product">
+          <p>Vanilla Shake</p>
+         <p>Blended to order with vanilla soft serve</p>
+        </article> 
+    </article>
 
     <article class="receipt">
-        <h2>Your Cart</h2>
-        <p>Cheeseburger        $15.00</p>
+        <article class="ritem">
+        <article class="title">
+            <h2>Your Cart</h2>
+        </article>
+         </article>
+
+        <article class="ritem">
+        <p>Cheeseburger</p>
         <p>*** No Modifications</p>
+        <article class="price">$15.00</article>
+        </article>
 
-        <p>Vanilla Shake        $9.00</p>
+        <article class="ritem">
+        <p>Vanilla Shake</p>
         <p>Blended to order with vanilla soft serve</p>
-        <p>+ Oat Milk           +$0.80</p>
+        <article class="price">+ Oat Milk $0.80 </article>
+        <article class="price">$9.00</article>
+        </article>
 
-        <p>Taxes Included:        $1.93</p>
-        <p>Total:                 $24.80</p>
-
+        <article class="ritem">
+        <article class="total">
+        <p>Taxes Included: Total:</p>
+        <article class="amount">
+        <p>$1.93 $24.80</p>
+        </article>
+        </article>
+        </article>
+        
         <div class="proceed">
             <a href="/html/checkout.html">Proceed to Payment</a>
         </div>
     </article>
-    </main>
+    </article>
 
+    </main>
 </body>
 </html>

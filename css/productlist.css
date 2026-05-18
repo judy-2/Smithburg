@@ -6,6 +6,7 @@ header {
     z-index: 1000;
     box-shadow: 0 4px 12px rgba(red, green, blue, alpha);
     background-color: #FFFF;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .line {
@@ -42,6 +43,7 @@ button {
     background-color: #FFDB70;
     color:#FFDB70;
     padding: 3px 7px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 a {
@@ -110,6 +112,7 @@ body {
     width: 300px;
     height: 425px;
     margin: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
 .card:hover {
@@ -165,3 +168,31 @@ img {
 .title {
   font-size: medium;
 }
+
+.cart-icon{
+    position: absolute;
+    z-index: 1000;
+    top: 30px;
+    right: 40px;
+  }
+ 
+  #cart-count {
+    position: absolute;
+    z-index: 1000;
+    top: -10px;
+    right: -10px;
+    
+    background-color: #ff2929;
+    color: white;
+    border-radius: 50%;
+ 
+    width: 18px;
+    height: 18px;
+    font-size: 10.5px;
+ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+ 

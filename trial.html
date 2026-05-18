@@ -5,36 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-         .selection-btn{
-   padding: 12px 25px;
-   margin: 10px;
-   border: none;
-   border-radius: 10px;
-   background-color: #c5c5c5;
-   cursor: pointer;
-   font-size: 18px;
-   transition: 0.3s;
- }
+      .cart-icon{
+        position: absolute;
+        top: -8px;
+        right: -10px;
 
- .active {
-   background-color: #FFCB2D;
-   color: #c5c5c5;
- }
+        background-color: red;
+        color: white;
+        border-radius: 50%;
+
+        width: 18px;
+        height: 18px;
+        font-size: 12px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     </style>
 </head>
 <body>
-    <button class="selection-btn" onclick="toggleButton(this)">
-        <p>In-store pick up</p>
-        </button>
-    
-        <button class="selection-btn" onclick="toggleButton(this)">
-        <p>Delivery</p>
-        </button>
+   <a href="/html/cart.html" class="cart-icon">
+    s
+    <span id="cart-count">0</span>
+   </a>
 
-        <script>
-            function toggleButton(button) {
-    button.classList.toggle("active")
-}
-        </script>
+   <button onclick="addToCart()">burger</button>
+   <button onclick="addToCart()">shake</button>
+
+   <script>
+    let cartCount = 0;
+
+    function addToCart() {
+      cartCount++;
+      document.getElementById("cart-count").innerText = cartCount;
+    }
+
+    if(cartCount ===0){
+      document.getElementById("cart-count").style.display = "none";
+    } else {
+      document.getElementById("cart-count").style.display = "flex";
+    }
+   </script>
 </body>
 </html>

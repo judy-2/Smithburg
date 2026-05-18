@@ -8,16 +8,22 @@
     <link rel="stylesheet" href="/css/vanilla.css">
     <link rel="stylesheet" href="/css/typography.css">
 
+    <script src="/js/shopping_cart.js" defer></script>
+
 </head>
 <body>
     <header>
-        <h1>Smithburg</h1>
-            <article class="back">
-                <a href="/index.html"><button>o</button></a>
-            </article>
+        <a href="/index.html">
+            <h1>Smithburg</h1>
+         </a>
+                <a><button class="back" onclick="history.back()">o</button></a>
             <article class="line">
                 <p>.</p>
             </article>
+
+            <a href="/html/cart.html" class="cart-icon">
+                🛒 <span id="cart-count">0</span>
+               </a>
     </header>
 
     <main>
@@ -29,9 +35,13 @@
      </article>
 
      <article class="addtocart">
-         <a href="/html/cart.html">Add to Cart</a>
+        <button onclick="addToCart()">Add to Cart</button>
      </article>
     </article>
+
+    <article class="menu">
+        <a href="/html/productlist.html">Back to menu</a>
+       </article>   
     </main>
 
 </body>
