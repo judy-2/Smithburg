@@ -41,18 +41,22 @@ h1 {
 .proceed {
     background-color: #ffffff;
     color: black;
-    padding: 18px;
     border-radius: 100%;
     border: 4.5px solid #FFCB2D;
     text-align: center;
     max-width: 170px;
-    margin-top: 50px;
     margin-bottom: 70px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border-radius: 16px;
+    cursor: pointer;
  }
 
  .proceed:hover {
-    background-color: #c5c5c5;
+    background-color: #e1b328;
  }
 
  a {
@@ -87,6 +91,7 @@ h1 {
 
  form {
   width: 300px;
+  margin-top: -20px;
  }
 
  input {
@@ -116,7 +121,7 @@ h1 {
   margin-top: 5px;
  }
 
- .delivery, .store, .proceed {
+ .delivery, .store {
    display: flex;
    justify-content: center;
    
@@ -129,4 +134,9 @@ h1 {
 
  .enter {
   padding: 15px;
+ }
+
+ img {
+  width: 75px;
+  height: 45px;
  }

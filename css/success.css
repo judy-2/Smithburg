@@ -66,10 +66,15 @@ main {
     margin-bottom: 90px;
 }
 
-h2 {
-  
+.item {
+    padding: 10px 0px;
+    border-bottom: 1px dashed grey;
 }
 
-p {
- 
+.total {
+    font-weight: bold;
+}
+
+.receipt {
+    text-align: left;
 }
