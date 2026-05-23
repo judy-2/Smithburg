@@ -38,7 +38,7 @@ button {
 }
 
 .addtocart {
-    background-color: #ffffff;
+    background-color: #FFDB70;
     color: black;
     padding: 18px;
     border-radius:16px;
@@ -88,7 +88,8 @@ button {
     text-decoration: none;
     display: inline-block;
     max-width: 260px;
-    margin-top: 200px;
+    margin-top: 650px;
+    margin-left: -350px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
  }
 
@@ -148,4 +149,14 @@ button {
    justify-content: center;
  }
 
+ .desc {
+  background-color: white;
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 300px;
+  margin-top: -400px;
+  margin-right: -200px;
+  float: left;
+ }
  

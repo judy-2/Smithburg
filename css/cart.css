@@ -37,10 +37,11 @@ header {
  }
 
  .proceed {
-     background-color: #FFCB2D;
+     background-color: #FFDB70;
+     color: black;
+     border: 4.5px solid #FFCB2D;
      padding: 18px;
      border-radius:16px;
-     border-color:rgb(211, 188, 161) ;
      text-align: center;
      display: inline-block;
      max-width: 245px;

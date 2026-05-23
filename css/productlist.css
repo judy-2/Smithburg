@@ -34,15 +34,22 @@ header {
    top: 20px;
    left: 20px;
    z-index: 1000; 
-}
-
-button {
     border-radius: 50%;
     border:none;
     background-color: #FFDB70;
     color:#FFDB70;
     padding: 3px 7px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+button {
+    background-color: #FFCB2D;
+    color: #ffffff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
 }
 
 a {
@@ -105,7 +112,7 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 3px 8ps rgba(red, green, blue, alpha);
     width: 300px;
-    height: 445px;
+    height: 465px;
     margin: auto;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -114,18 +121,38 @@ body {
     background-color: #d4d4d4;
     transform: translateY(-8px);
     box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
-    filter: brightness(70%);
+    filter: brightness(80%);
+}
+
+.bcard {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 3px 8ps rgba(red, green, blue, alpha);
+    width: 300px;
+    height: 490px;
+    margin: auto;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.bcard:hover {
+    background-color: #d4d4d4;
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
+    filter: brightness(80%);
 }
 
 h5 {
     font-size: 23px;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
 .price {
     font-weight: bold;
     font-size: 16px;
+    margin-top: 7%;
 }
 
 .description {
@@ -134,7 +161,10 @@ h5 {
 }
 
 p {
-    font-size: 18px;
+    font-size: 17px;
+    padding: 10px;
+    margin-top: -5px;
+    margin-bottom: -10px;
 }
 
 img {
@@ -169,6 +199,7 @@ img {
     z-index: 1000;
     top: 30px;
     right: 40px;
+    cursor: pointer;
   }
  
   #cart-count {
@@ -190,4 +221,119 @@ img {
     justify-content: center;
   }
 
- 
+ .cart-sidebar {
+    position: fixed;
+    position: absolute;
+    z-index: 1000;
+    right: -350px;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    color: #FFCB2D;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    padding: 20px;
+    transition: right 0.3s;
+    overflow-y: scroll;
+ }
+
+ .cart-sidebar.active {
+    right: 0;
+    position: fixed;
+ }
+
+ .cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFCB2D;
+    padding: 20px;
+    text-align: left;
+    margin-top: -25px;
+ }
+
+ .close-cart {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color:#ff2929;
+    margin-left: auto;
+    margin-right: -20px;
+ }
+
+ .cart-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 70%;
+    box-sizing: border-box;
+    width: 100%;
+ }
+
+ .cart-item {
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    margin-top: -16px;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: #FFDB70;
+    color: black;
+    border-radius: 16px;
+    width: 250px;
+    align-items: center;
+    gap: 20px;
+    padding-left: 40px;
+    width: 100%;
+    box-sizing: border-box;
+ }
+
+ .add {
+  margin-top: 7%;
+  width: 200px;
+  border-radius: 32px;
+ }
+
+ .add:hover {
+    background-color: #d4d4d4;
+    box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
+    filter: brightness(70%);
+ }
+
+.proceed {
+    background-color: #FFDB70;
+    color: rgb(0, 0, 0);
+    border-radius: 100%;
+    border: 4.5px solid #FFCB2D;
+    text-align: center;
+    max-width: 170px;
+    margin-bottom: 5%;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 12px 24px;
+    border-radius: 16px;
+    cursor: pointer;
+    margin-top: 10%;
+    margin-bottom: 3%;
+ }
+
+ .proceed:hover {
+    background-color: #e1b328;
+ }
+
+ .cart-total {
+    margin-left: auto;
+    margin-right: 150px;
+ }
+
+ .item-name {
+    flex: 1;
+    text-align: left;
+ }
+
+ .item-price{
+    margin-right: 5px;
+ }

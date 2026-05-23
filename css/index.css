@@ -66,7 +66,7 @@ h1 {
 .about {
     width: 50%;
     margin: auto;
-    margin-top: 600px;
+    margin-top: 10px;
     font-size: medium;
     font-weight: lighter;
     text-align: center;
@@ -75,15 +75,22 @@ h1 {
 }
 
 .aboutus {
-    margin-top: 80px;
     text-align: center;
     font-size: large;
 }
 
+.guy {
+   width: 700px;
+   border-radius: 16px;
+   margin: 0 auto;
+   margin-left: 25%;
+   margin-top: -30px;
+   margin-bottom: 20px;
+}
 
 .open {
     text-align: center;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 25px;
 }
 
@@ -93,7 +100,7 @@ h1 {
     
     display: flex;
     flex-wrap: wrap;
-    margin-top: 45px;
+    margin-top: 15px;
    
     justify-content: center;
     font-size: 25px; 

@@ -9,8 +9,7 @@
     <link rel="stylesheet" href="/css/colors.css">
     <link rel="stylesheet" href="/css/productlist.css">
     <link rel="stylesheet" href="/css/typography.css">
-
-    <script src="/js/shopping_cart.js" defer></script>
+    <link rel="stylesheet" href="/css/main.css">
 
 </head>
 <body>
@@ -26,17 +25,15 @@
                 </ul>
              </div>
              
-            <article class="back">
-                <a href="/index.html"><button>o </button></a>
-            </article>
+             <a><button class="back" onclick="history.back()">o</button></a>
             
             <article class="line">
                 <p>.</p>
             </article>
 
-            <a href="/html/cart.html" class="cart-icon">
+            <article class="cart-icon" onclick="toggleCart()">
                 🛒 <span id="cart-count">0</span>
-               </a>
+            </article>
     </header>
 
     <main>
@@ -61,11 +58,14 @@
      <article class="description">
          <p>Iceberg, butter, lettuce, mayo, chives</p>
      </article>
+     <article class="bottom">
      <article class="price">
          <h5>$25.00</h5>
      </article>
     </article>
     </a>
+    <button class="add" onclick="addToCart('Halifax', 25)">Add to Cart</button>
+    </article>
     </article>
 
     <article class="card">
@@ -83,6 +83,7 @@
      </article>
     </article>
     </a>
+    <button class="add" onclick="addToCart('Classic Lobster Roll', 25)">Add to Cart</button>
     </article>
 
     <article class="card">
@@ -98,6 +99,7 @@
           <h5>$25.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Chili Lobster Roll', 25)">Add to Cart</button>
     </article>
 
     <article class="card">
@@ -113,6 +115,7 @@
          <h5>$25.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Garlic Lobster Roll', 25)">Add to Cart</button>
     </article>
     </div>
     
@@ -135,6 +138,7 @@
          <h5>$16.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Classic Margarita', 16)">Add to Cart</button>
     </article>
 
     <article class="card">
@@ -144,12 +148,13 @@
      </article>
      <img src="/assets/tommys.png" alt="Image of the Tommy's Margarita"> 
      <article class="description">
-        <p>Reposado Tequila,  lime, agave syrup</p>
+        <p>Reposado Tequila,  lime, agave </p>
      </article>
      <article class="price">
          <h5>$21.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Tommys Margarita', 21)">Add to Cart</button>
     </article>
 
     <article class="card">
@@ -159,12 +164,13 @@
      </article>
      <img src="/assets/mspicy.png" alt="Image of the Spicy Margarita"> 
      <article class="description">
-        <p>Tequila, triple sec, lime, tobasco, chili</p>
+        <p>Tequila, triple sec, lime, chili</p>
      </article>
      <article class="price">
          <h5>$18.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Spicy Margarita', 18)">Add to Cart</button>
     </article>
 
     <article class="card">
@@ -180,6 +186,7 @@
          <h5>$21.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Lychee Margarita', 21)">Add to Cart</button>
     </article>
     
     <article class="card">
@@ -196,6 +203,7 @@
          <h5>$21.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Pineapple Margarita', 16)">Add to Cart</button>
     </article>
     </div>
     </div>
@@ -210,7 +218,7 @@
 
 
     <div class="content">
-    <article class="card">
+    <article class="bcard">
     <article class="cheese">
         <article class="productlist">
             <a href="/html/burger.html">
@@ -227,9 +235,10 @@
     </article>
     </article>
     </a>
+    <button class="add" onclick="addToCart('Cheeseburger', 15)">Add to Cart</button>
     </article>
 
-    <article class="card">
+    <article class="bcard">
     <article class="Bacon">
      <article class="name">
          <h5>Bacon</h5> 
@@ -242,9 +251,10 @@
          <h5>$18.00</h5>
     </article>
     </article>
+    <button class="add" onclick="addToCart('Bacon Beef Burger', 18)">Add to Cart</button>
     </article>
 
-    <article class="card">
+    <article class="bcard">
     <article class="spicyburger">
      <article class="name">
          <h5>Spicy</h5> 
@@ -257,6 +267,7 @@
          <h5>$17.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Spicy Beef Burger', 17)">Add to Cart</button>
     </article>
     </div>
 
@@ -267,7 +278,7 @@
 
 
     <div class="content">
-    <article class="card">
+    <article class="bcard">
     <article class="fchicken">
      <article class="name">
          <h5>Fried Chicken</h5> 
@@ -280,9 +291,10 @@
          <h5>$17.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Fried Chicken Burger', 17)">Add to Cart</button>
     </article>
 
-    <article class="card">
+    <article class="bcard">
     <article class="nashville">
      <article class="name">
          <h5>Nashville Hot</h5> 
@@ -295,9 +307,10 @@
          <h5>$17.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Nashville Hot Chicken Burger', 17)">Add to Cart</button>
     </article>
 
-    <article class="card">
+    <article class="bcard">
     <article class="grilled">
      <article class="name">
          <h5>Grilled Chicken</h5> 
@@ -310,6 +323,7 @@
          <h5>$15.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Grilled Chicken Burger', 15)">Add to Cart</button>
     </article>
     </div>
 
@@ -319,22 +333,23 @@
 
 
     <div class="content">
-    <article class="card">
+    <article class="bcard">
     <article class="vcheese">
      <article class="name">
          <h5>Cheeseburger</h5> 
      </article>
      <img src="/assets/pcheeseburger.png" alt="Image of the Plant-Based Cheeseburger"> 
      <article class="description">
-        <p>House-made mushroom patty, coconut cheese, iceberg, tomato, pickles, onions, special sauce</p>
+        <p>House-made mushroom patty, coconut cheese, iceberg, tomato, pickles, special sauce</p>
      </article>
      <article class="price">
          <h5>$15.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Plant-based Cheeseburger', 15)">Add to Cart</button>
     </article>
 
-    <article class="card">
+    <article class="bcard">
     <article class="crispyc">
      <article class="name">
          <h5>Crispy Cauli</h5> 
@@ -349,6 +364,7 @@
      </article>
     </article>
     </article>
+    <button class="add" onclick="addToCart('Crispy Cauli Burger', 16)">Add to Cart</button>
     </article>
     </div>
 
@@ -358,38 +374,39 @@
 
 
     <div class="content">
-    <article class="card">
-    <article class="vanilla">
-    <a href="/html/vanilla.html">
-     <article class="name">
-         <h5>Vanilla Shake</h5> 
-     </article>
-     <img src="/assets/shake.png" alt="Image of Vanilla Milkshake"> 
-     <article class="description">
-        <p>Blended to order with vanilla soft serve</p>
-     </article>
-     <article class="price">
-         <h5>$9.00</h5>
-     </article>
-    </a>
-    </article>
+        <article class="card">
+         <article class="vanilla">
+                <a href="/html/vanilla.html">
+                         <article class="name">
+                              <h5>Vanilla Shake</h5> 
+                        </article>
+                        <img src="/assets/shake.png" alt="Image of Vanilla Milkshake"> 
+                         <article class="description">
+                          <p>Blended to order with vanilla soft serve</p>
+                       </article>
+                        <article class="price">
+                          <h5>$9.00</h5>
+                        </article>
+                </a>
+            </article>
+        <button class="add" onclick="addToCart('Vanilla Shake', 9)">Add to Cart</button>
     </article>
     
 
     <article class="card">
-    <article class="cola">
-     <article class="name">
-         <h5>Coca Cola</h5> 
-     </article>
-     <img src="/assets/cola.png" alt="Image of Coca-Cola"> 
-     <article class="description">
-        <p>375ml</p>
-     </article>
-     <article class="price">
-         <h5>$5.00</h5>
-     </article>
-    </article>
-    </article>
+        <article class="cola">
+             <article class="name">
+                 <h5>Coca Cola</h5> 
+             </article>
+            <img src="/assets/cola.png" alt="Image of Coca-Cola"> 
+            <article class="description">
+                  <p>Classic Coca Cola in a can (375ml)</p>
+            </article>
+            <article class="price">
+                 <h5>$5.00</h5>
+            </article>
+        </article>
+    <button class="add" onclick="addToCart('Coca Cola', 5)">Add to Cart</button>
     </article>
 
     <article class="card">
@@ -399,15 +416,35 @@
      </article>
      <img src="/assets/lemonade.png" alt="Image of the Lemonade"> 
      <article class="description">
-        <p>250ml</p>
+        <p>Lemonade from glass bottle (250ml)</p>
      </article>
      <article class="price">
          <h5>$6.00</h5>
      </article>
     </article>
+    <button class="add" onclick="addToCart('Lemonade', 6)">Add to Cart</button>
     </article>
     </div>
 
+    <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <ul class="cart-items"></ul>
+        <div class="cart-total">
+            <strong>Total: $<span id="total">0.00</span></strong>
+        </div>
+
+        <div class="proceed">
+            <a href="/html/cart.html">Proceed to Payment</a>
+        </div>
+    </div>
+
     </main>
+
+    <script src="/js/cart.js" ></script>
+    <script src="/js/productlist2.js" ></script>
+
 </body>
 </html>
