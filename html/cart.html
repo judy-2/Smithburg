@@ -35,52 +35,26 @@
           <h2> Items Selected </h2>
         </article>
 
-        <article class="product">
-            <p>Cheeseburger</p>
-            <p>Beef patty, Cheese, lettuce, tomato, onion, pickles, ketchup, mustard, special sauce</p>
-         </article>
-
-        <article class="product">
-          <p>Vanilla Shake</p>
-         <p>Blended to order with vanilla soft serve</p>
-        </article> 
-    </article>
-
-    <article class="receipt">
-        <article class="ritem">
-        <article class="title">
-            <h2>Your Cart</h2>
-        </article>
-         </article>
-
-        <article class="ritem">
-        <p>Cheeseburger</p>
-        <p>*** No Modifications</p>
-        <article class="price">$15.00</article>
+        <ul id="checkout-items"></ul>
+        <article class="checkoutTotal">
+        <h3>Total: $
+            <span id="checkout-total">0.00</span>
+        </h3>
         </article>
 
-        <article class="ritem">
-        <p>Vanilla Shake</p>
-        <p>Blended to order with vanilla soft serve</p>
-        <article class="price">+ Oat Milk $0.80 </article>
-        <article class="price">$9.00</article>
-        </article>
-
-        <article class="ritem">
-        <article class="total">
-        <p>Taxes Included: Total:</p>
-        <article class="amount">
-        <p>$1.93 $24.80</p>
-        </article>
-        </article>
-        </article>
-        
         <div class="proceed">
             <a href="/html/checkout.html">Proceed to Payment</a>
         </div>
+        </article> 
     </article>
     </article>
-
+    </article>
     </main>
+
+    <script src="/js/cart.js"></script>
+    <script src="/js/add_to_cart.js"></script>
+    <script src="/js/add.js"></script>
+    <script src="/js/productlist.js"></script>
+
 </body>
 </html>

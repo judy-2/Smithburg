@@ -22,9 +22,9 @@
                 <p>.</p>
             </article>
 
-            <a href="/html/cart.html" class="cart-icon"> 🛒
-                 <span id="cart-count">0</span>
-               </a>
+               <article class="cart-icon" onclick="toggleCart()">
+                🛒 <span id="cart-count">0</span>
+            </article>
     </header>
 
     <main>
@@ -36,7 +36,7 @@
         <h2>$25.00</h2>
      </article>
 
-        <button class="addtocart" onclick="addToCart('Halifax', 25)">Add to Cart</button>
+        <button class="addtocart" onclick="addToCart('Halifax', 25, 'assets/halifax.png')">Add to Cart</button>
      </article>
     </article>
 
@@ -44,10 +44,30 @@
         <a href="/html/productlist.html">Back to menu</a>
        </article>   
 
+       <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <ul class="cart-items"></ul>
+        <article class="cart-footer">
+        <div class="cart-total">
+            <strong>Total: $<span id="total">0.00</span></strong>
+        </div>
+
+        <div class="proceed">
+            <a href="/html/cart.html">Proceed to Payment</a>
+        </div>
+        </article>
+    </div>
+
+
     </main>
 
     <script src="/js/add.js" ></script>
     <script src="/js/cart.js" ></script>
+    <script src="/js/productlist.js"></script>
+    <script src="/js/1.js"></script>
 
 </body>
 </html>

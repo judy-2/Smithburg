@@ -6,6 +6,7 @@
     <title>burger</title>
 
     <link rel="stylesheet" href="/css/layout.css">
+    <link rel="stylesheet" href="/css/typography.css">
     <link rel="stylesheet" href="/css/main.css">
 
 </head>
@@ -21,12 +22,13 @@
                 <p>.</p>
             </article>
 
-            <a href="/html/cart.html" class="cart-icon"> 🛒
-                 <span id="cart-count">0</span>
-               </a>
+               <article class="cart-icon" onclick="toggleCart()">
+                🛒 <span id="cart-count">0</span>
+            </article>
     </header>
 
     <main>
+    <img src="/assets/classic.png" alt="Image of the Classic Lobster roll"> 
     <article class="desc">
      <h2>Classic</h2>
      <p>Iceberg, pickled shallot, watercress, butter, mayo, herbs</p>
@@ -34,8 +36,7 @@
         <h2>$25.00</h2>
      </article>
 
-     <article class="addtocart">
-          <button onclick="addToCart()">Add to Cart</button>
+        <button class="addtocart" onclick="addToCart('Classic', 25)">Add to Cart</button>
      </article>
     </article>
 
@@ -43,6 +44,31 @@
         <a href="/html/productlist.html">Back to menu</a>
        </article>   
 
+       <div class="cart-sidebar">
+        <div class="cart-header">
+            <h2>Shopping Cart</h2>
+            <button class="close-cart">&times;</button>
+        </div>
+        <ul class="cart-items"></ul>
+
+        <article class="cart-footer">
+        <div class="cart-total">
+            <strong>Total: $<span id="total">0.00</span></strong>
+        </div>
+
+        <div class="proceed">
+            <a href="/html/cart.html">Proceed to Payment</a>
+        </div>
+         </article>
+    </div>
+    
+
+
     </main>
+
+    <script src="/js/add.js" ></script>
+    <script src="/js/cart.js" ></script>
+    <script src="/js/productlist.js"></script>
+
 </body>
 </html>

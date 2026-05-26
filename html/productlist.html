@@ -64,17 +64,17 @@
      </article>
     </article>
     </a>
-    <button class="add" onclick="addToCart('Halifax', 25)">Add to Cart</button>
+    <button class="add" onclick="addToCart('Halifax', 25, 'assets/halifax.png')">Add to Cart</button>
     </article>
     </article>
 
     <article class="card">
-        <a href="/html/halifax.html">
+        <a href="/html/classic.html">
     <article class="classic">
     <article class="name">
          <h5>Classic</h5> 
      </article>
-     <img src="/assets/classic.png" alt="Image of the CLassic Lobster roll"> 
+     <img src="/assets/classic.png" alt="Image of the Classic Lobster roll"> 
      <article class="description">
          <p>Iceberg, pickled shallot, watercress, butter, mayo, herbs</p>
      </article>
@@ -227,7 +227,7 @@
      </article>
      <img src="/assets/cheeseburger.png" alt="Image of Cheeseburger"> 
      <article class="description">
-        <p>Beef patty, Cheese, lettuce, tomato, onion, pickles, ketchup, mustard, special sauce</p>
+        <p>Beef patty, Cheese, lettuce, tomato, pickles, ketchup, mustard, special sauce</p>
      </article>
      <article class="price">
          <h5>$15.00</h5>
@@ -432,6 +432,7 @@
             <button class="close-cart">&times;</button>
         </div>
         <ul class="cart-items"></ul>
+        <article class="cart-footer">
         <div class="cart-total">
             <strong>Total: $<span id="total">0.00</span></strong>
         </div>
@@ -439,12 +440,14 @@
         <div class="proceed">
             <a href="/html/cart.html">Proceed to Payment</a>
         </div>
+        </article>
     </div>
 
     </main>
 
     <script src="/js/cart.js" ></script>
-    <script src="/js/productlist2.js" ></script>
+    <script src="/js/productlist.js" ></script>
+    
 
 </body>
 </html>

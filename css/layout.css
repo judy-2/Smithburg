@@ -33,9 +33,6 @@ header {
    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
 
-button {
-   all:unset;
-}
 
 .addtocart {
     background-color: #FFDB70;
@@ -50,6 +47,10 @@ button {
     margin: auto;
     text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    text-align: left; 
+    right: 0;
+    margin-top: 20%;
+    margin-left: 30%;
  }
 
  .addtocart:hover, .addtocart:active {
@@ -71,13 +72,6 @@ button {
    text-align: left; 
  }
 
- .addtocart {
-   text-align: left; 
-   right: 0;
-   margin-top: 20%;
-   margin-left: 30%;
- }
-
  .menu {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
@@ -88,13 +82,13 @@ button {
     text-decoration: none;
     display: inline-block;
     max-width: 260px;
-    margin-top: 650px;
+    margin-top: 600px;
     margin-left: -350px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
  }
 
  .menu:hover, .menu:active {
-   background-color:#e0b229 ;
+   background-color:#cacaca ;
 }
 
  a {
@@ -114,7 +108,7 @@ button {
  img {
    width: 400px;
    height: 400px;
-   margin-top: 170px;
+   margin-top: 50px;
    float: left;
    left: 20%;
    right: 0;
@@ -124,11 +118,12 @@ button {
  }
 
  .cart-icon{
-   position: absolute;
-   z-index: 1000;
-   top: 30px;
-   right: 40px;
- }
+  position: absolute;
+  z-index: 1000;
+  top: 30px;
+  right: 40px;
+  cursor: pointer;
+}
 
  #cart-count {
    position: absolute;
@@ -150,13 +145,165 @@ button {
  }
 
  .desc {
-  background-color: white;
   padding: 45px;
   border-radius: 15px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   width: 300px;
   margin-top: -400px;
   margin-right: -200px;
   float: left;
  }
- 
+
+.cart-sidebar {
+  position: fixed;
+  position: absolute;
+  z-index: 1000;
+  right: -350px;
+  top: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #ffffff;
+  color: #FFCB2D;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  padding: 20px;
+  transition: right 0.3s;
+  overflow-y: scroll;
+}
+
+.cart-sidebar.active {
+  right: 0;
+  position: fixed;
+}
+
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #FFCB2D;
+  padding: 20px;
+  text-align: left;
+  margin-top: -25px;
+}
+
+.close-cart {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color:#ff2929;
+  margin-left: auto;
+  margin-right: -20px;
+}
+
+.cart-items {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 70%;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  z-index: 1000;
+  margin-top: -16px;
+  margin-bottom: 30px;
+  padding: 10px;
+  background-color: #FFDB70;
+  color: black;
+  border-radius: 16px;
+  width: 250px;
+  align-items: center;
+  gap: 20px;
+  padding-left: 40px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.add {
+margin-top: 7%;
+width: 200px;
+border-radius: 32px;
+}
+
+.add:hover {
+  background-color: #d4d4d4;
+  box-shadow: 0 8px 20px rgba(red, green, blue, alpha);
+  filter: brightness(70%);
+}
+
+.proceed {
+  background-color: #FFDB70;
+  color: rgb(0, 0, 0);
+  border-radius: 100%;
+  border: 4.5px solid #FFCB2D;
+  text-align: center;
+  max-width: 170px;
+  margin-bottom: 5%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border-radius: 16px;
+  cursor: pointer;
+  margin-top: 7%;
+  margin-bottom: 3%;
+}
+
+.proceed:hover {
+  background-color: #e1b328;
+}
+
+.cart-total {
+  margin-left: 120px;
+  background-color: #ffffff;
+  border: 4.5px solid #FFCB2D;
+  border-radius: 100%;
+  text-align: center;
+  max-width: 170px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 12px 24px;
+  border-radius: 16px;
+}
+
+.item-name {
+  flex: 1;
+  text-align: left;
+}
+
+.item-price{
+  margin-right: 5px;
+}
+
+button {
+  background-color: #FFCB2D;
+  color: #ffffff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+main {
+  background-color: white;
+  border: 5px solid #FFCB2D;
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  width: 80%;
+  margin-top: 200px;
+  margin-left: 6.5%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.cart-footer {
+  position: absolute;
+  bottom: 70px;
+  width: 100%;
+  left: -1px;
+}
