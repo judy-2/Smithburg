@@ -129,13 +129,6 @@ header {
    justify-content: center;
  }
 
- .checkout-img {
-   width:100px;
-   height:100px;
-   object-fit:cover;
-   margin-right: 10px;
-   margin-left: 7%;
- }
 
  #checkout-items {
    list-style: none;
@@ -152,14 +145,17 @@ header {
    padding-bottom: 30px;
    border-bottom: 1px dashed grey;
    text-align: left;
+   padding-left: 50px;
  }
 
  .checkoutTotal {
    padding-bottom: 20px;
    border-bottom: 1px dashed grey;
+   padding-left: 50px;
  }
 
  h3 {
    margin-top: 40px;
-   margin-left: 7%;
  }
+
+ 

@@ -4,7 +4,7 @@ function saveCart() {
     localStorage.setItem("cart", JSON.stringify(cart));
 }
 
-// Update cart count 
+// update cart count 
 function updateCartCount() {
     const cartCount = document.getElementById("cart-count");
     if (!cartCount) return;

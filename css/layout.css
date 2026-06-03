@@ -51,6 +51,7 @@ header {
     right: 0;
     margin-top: 20%;
     margin-left: 30%;
+    font-size: 15px;
  }
 
  .addtocart:hover, .addtocart:active {
@@ -75,16 +76,17 @@ header {
  .menu {
     background-color: #ffffff;
     color: rgb(0, 0, 0);
-    padding: 18px;
+    padding: 15px;
     border-radius:16px;
     border: 4.5px solid #ffbf00;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     max-width: 260px;
-    margin-top: 600px;
+    margin-top: 515px;
     margin-left: -350px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    margin-bottom: 7px;
  }
 
  .menu:hover, .menu:active {
@@ -114,6 +116,7 @@ header {
    right: 0;
    margin-left: 15%;
    border-radius: 16px;
+   border: 4.5px solid #ffbf00;
    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
  }
 
@@ -148,7 +151,7 @@ header {
   padding: 45px;
   border-radius: 15px;
   width: 300px;
-  margin-top: -400px;
+  margin-top: -465px;
   margin-right: -200px;
   float: left;
  }
@@ -298,7 +301,8 @@ main {
   width: 80%;
   margin-top: 200px;
   margin-left: 6.5%;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  margin-bottom: 70px;
+
 }
 
 .cart-footer {

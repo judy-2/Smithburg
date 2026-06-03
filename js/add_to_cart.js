@@ -15,7 +15,6 @@ cart.forEach((item) => {
 
     const li = document.createElement('li');
     li.innerHTML = `
-    <img src="${item.image}" class="checkout-img">
 
     ${item.name} 
     x ${item.quantity}
@@ -27,4 +26,3 @@ cart.forEach((item) => {
 });
 
 checkoutTotal.textContent = total.toFixed(2);
-
