@@ -69,6 +69,8 @@ main {
 .item {
     padding: 10px 0px;
     border-bottom: 1px dashed grey;
+    margin-bottom: 30px;
+    margin-top: -5px;
 }
 
 .total {
@@ -89,10 +91,22 @@ main {
 }
 
 .desc {
-    width: 330px;
+    width: 310px;
+    margin-bottom: 40px;
 }
 
 .total {
     text-align: right;
-    margin-top: 60px;
+    margin-top: 30px;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 20px;
+}
+
+.two {
+    margin-top: -24px;
 }

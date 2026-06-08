@@ -50,8 +50,10 @@ header {
     text-align: left; 
     right: 0;
     margin-top: 20%;
-    margin-left: 30%;
+    margin-left: 26%;
     font-size: 15px;
+    padding-left: 9%;
+    padding-right: 10%;
  }
 
  .addtocart:hover, .addtocart:active {
@@ -82,9 +84,9 @@ header {
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    max-width: 260px;
-    margin-top: 515px;
-    margin-left: -350px;
+    max-width: 220px;
+    margin-top: 375px;
+    margin-left: 168px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     margin-bottom: 7px;
  }
@@ -112,9 +114,8 @@ header {
    height: 400px;
    margin-top: 50px;
    float: left;
-   left: 20%;
    right: 0;
-   margin-left: 15%;
+   margin-left: 7%;
    border-radius: 16px;
    border: 4.5px solid #ffbf00;
    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
@@ -298,11 +299,11 @@ main {
   padding: 45px;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-  width: 80%;
-  margin-top: 200px;
-  margin-left: 6.5%;
+  width: 65%;
+  height: 510px;
+  margin-top: 170px;
+  margin-left: 14.5%;
   margin-bottom: 70px;
-
 }
 
 .cart-footer {
