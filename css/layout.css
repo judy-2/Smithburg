@@ -28,7 +28,9 @@ header {
    border-radius: 50%;
    border:none;
    background-color: #FFDB70;
-   color:#FFDB70;
+   color:#ffffff;
+   font-weight: bold;
+   height: 27px;
    padding: 3px 7px;
    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -311,4 +313,20 @@ main {
   bottom: 70px;
   width: 100%;
   left: -1px;
+}
+
+@media screen and (max-width: 390px) {
+  .main {
+    height: 700px;
+  }
+
+  img {
+    width: 250px;
+    height: 250px;
+    align-items: center;
+  }
+
+  .desc {
+    left: -200px;
+  }
 }

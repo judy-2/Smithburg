@@ -37,7 +37,9 @@ header {
     border-radius: 50%;
     border:none;
     background-color: #FFDB70;
-    color:#FFDB70;
+    color:#ffffff;
+    font-weight: bold;
+    height: 27px;
     padding: 3px 7px;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
 }
@@ -111,10 +113,12 @@ body {
     border-radius: 12px;
     transition: all 0.3s ease;
     box-shadow: 0 3px 8px rgba(red, green, blue, alpha);
-    width: 300px;
+    max-width: 300px;
     height: 465px;
     margin: auto;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+
+    width: 90%;
 }
 
 .card:hover {
@@ -364,4 +368,43 @@ img {
     bottom: 70px;
     width: 100%;
     left: -1px;
+  }
+
+  .main {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 390px) {
+     .content {
+        display: block;
+    }
+
+    .card {
+        margin-bottom: 50px;
+    }
+
+    .bcard {
+        margin-bottom: 50px;
+    }
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .topnav {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .topnav a {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
   }
