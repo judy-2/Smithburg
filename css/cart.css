@@ -160,4 +160,21 @@ header {
    margin-top: 40px;
  }
 
- 
+ @media screen and (max-width: 390px) {
+   .items {
+      max-width: 250px;
+   }
+
+   #checkout-items li {
+      align-items: left;
+      padding-left: 20px;
+   }
+
+   .proceed {
+      margin-left: 20px;
+   }
+
+   body {
+      max-width: 390px;
+   }
+ }

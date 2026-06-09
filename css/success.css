@@ -112,3 +112,18 @@ img{
 .two {
     margin-top: -24px;
 }
+
+@media screen and (max-width: 390px) {
+    main {
+        max-width: 250px;
+        height: 700px;
+    }
+
+    .desc {
+        max-width: 280px;
+    }
+
+    .price {
+        margin-top: -35px;
+    }
+}

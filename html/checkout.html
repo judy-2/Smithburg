@@ -27,6 +27,7 @@
     <main>
     <h2>1. Delivery Method</h2>
 
+    <article class="btn">
     <button class="delivery-btn" onclick="toggleDelivery(this)">
     <p>In-store pick up</p>
     </button>
@@ -34,9 +35,11 @@
     <button class="delivery-btn" onclick="toggleDelivery(this)">
     <p>Delivery</p>
     </button>
+    </article>
 
     <h2>2. Payment Method</h2>
 
+    <article class="btn">
     <button class="selection-btn" onclick="toggleButton(this)">
         <img src="/assets/mastercard.png" alt="Image of Mastercard payment option"> 
     </button>
@@ -48,6 +51,7 @@
     <button class="selection-btn" onclick="toggleButton(this)">
         <img src="/assets/apple_pay.png" alt="Image of Apple Pay payment option"> 
     </button>
+    </article>
 
     <form>
       <div class="row">
@@ -91,11 +95,6 @@
             <label for="vuntil">Valid Until:</label> 
             <input type="vuntil" id="vunitl"> 
         </div>
-
-        <div class="enter">
-            <label for="vcc">VCC:</label> 
-            <input type="vcc" id="vcc"> 
-       </div>
     </div>
     </form>
 
