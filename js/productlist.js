@@ -27,8 +27,8 @@ function updateCart() {
 }
 
 // add to cart
-function addToCart(name, price, image) {
-    cart.push({ name, price, image });
+function addToCart(name, price) {
+    cart.push({ name, price});
     saveCart();
     updateCart();
     updateCartCount();

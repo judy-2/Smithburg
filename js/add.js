@@ -1,5 +1,5 @@
-function addToCart(name, price, image) {
-    cart.push({ name, price, image });
+function addToCart(name, price) {
+    cart.push({ name, price});
     localStorage.setItem("cart", JSON.stringify(cart));
     updateCartCount();
   
@@ -11,7 +11,6 @@ function addToCart(name, price, image) {
          cart.push({
             name: name,
             price: price,
-            image: image,
              quantity: 1,
             });
         }
