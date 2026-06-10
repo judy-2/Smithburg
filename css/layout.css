@@ -348,6 +348,7 @@ main {
     font-size: 10px;
     max-height: 70px;
     margin-top: 455px;
+    font-weight: bold;
   }
 
   .addtocart {
@@ -357,6 +358,7 @@ main {
     font-size: 10px;
     max-width: 150px;
     padding: 15px;
+    font-weight: bold;
   }
 
   .topnav {
