@@ -302,9 +302,9 @@ main {
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.2);
   width: 65%;
+  margin-left: 4.5%;
   height: 510px;
-  margin-top: 170px;
-  margin-left: 14.5%;
+  margin-top: 150px;
   margin-bottom: 70px;
 }
 
@@ -324,6 +324,8 @@ main {
   .main {
     height: 800px;
     max-width: 300px;
+    width: 80%;
+    margin-right: auto;
   }
 
   img {
